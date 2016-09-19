@@ -1,0 +1,124 @@
+  	*{
+			   		padding:0;
+			   		margin:0;
+
+			   	}
+			   	#background{
+			   		
+			   		width: 100%;
+			   		height: 530px;
+
+			   	}
+			   	#bg_img{
+			   		width: 100%;
+			   		position: absolute;
+			   		min-height: 99%;
+
+			   	}
+			   	#search_area{
+			   		 z-index: 4;
+			   	}
+			   	#content{
+			   		height: 100%;
+			   		width: 100%;
+			   		position: relative;
+			   		text-align: center;
+
+			   	}
+			   .vertical-align{
+			   	position: relative;
+			   	top: 50%;
+			   	text-transform: translateY(-50%);
+
+			   }
+			   @media only screen and (min-width: 40em){
+			   	#content{
+			   		top: -200px;
+			   		background-color: transparent;
+			   	}
+			   }
+
+			   #client_products_div{
+			   	position: relative;
+			   	padding: 10px 20px 10px 20px;
+			   	min-height: 500px;
+			   
+			   	top: -400px;
+			   	margin-bottom: -300px;
+			   	    background-color: beige;
+				 }
+				
+				 .panel-heading{
+				 	background-color:#f3f3f3;
+
+				 }
+				 #footer{
+				 	width:100%;
+				 	background-color: black;
+				 	height: auto;
+				 	padding-left: 40px;
+				 	margin-top: 50px;
+
+
+				 }
+				  #panel-heading{
+				 	background-color:#f3f3f3;
+
+				 }
+				 #fade{
+				 	opacity:0.6;
+				 }
+				 #fade:hover{
+				 	opacity: 1;
+				 }
+				 #features{
+				 	text-align: center;
+				 
+				 	position: relative;
+				 }
+
+			.form-container{
+				width:100%;
+
+			}
+			.no-results{
+				text-align: center;
+				background-color: #222;
+				color:#fff;
+				
+			}
+			.vertical-align{
+				position: relative;
+				
+				transform:translateY(-50%);
+				 z-index: 4;
+				
+			}
+			
+				.form-vertical-align{
+				position: relative;
+				top:20%;
+				transform:translateY(-10%);
+				background-color: #222;
+				
+			}
+			#form-mid{
+
+				transform:translateX(-50%);
+				left:50%;
+				padding-bottom: 30px;
+				border-radius: 20px;
+			}
+			@media only screen and (min-width:22em){
+.no-results{
+	height: 800px;
+
+}
+
+			}
+
+			#myP{
+				background-color: transparent;
+
+			}
+			/* index 2 css */
