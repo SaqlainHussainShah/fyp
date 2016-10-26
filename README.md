@@ -4,6 +4,6 @@
 #Make a database with name fyp
 #Import fyp.sql file
 
- ## -------Note------
-# 
+ # -------Note------
+
 Text SMS ntification will not work because I have Api on trial basis. To make it functional renew api by signing up to new account.
