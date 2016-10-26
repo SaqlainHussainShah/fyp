@@ -9,10 +9,10 @@ if (isset($_POST['hotel_id']) && isset($_POST['product_id']) && isset($_POST['cl
 	 $sql="INSERT INTO order_food(product_id,hotel_id,client_id,product_quantity,order_total,order_price)
 									 VALUES ('$product_id','$hotel_id','$client_id','$product_quantity','$order_total','$order_price')";
 									 include 'dbconnect.php';
-if (mysqli_query($conn,$sql)) {
-									include '../textsms.php';
-									$message="You ordered $product_quantity deals of food  with id: $product_id for RS. $order_total  ";
-									
+	if (mysqli_query($conn,$sql)) {
+						include '../textsms.php';
+						$message="You ordered $product_quantity deals of food  with id: $product_id for RS. $order_total  ";
+								
 // get client number
 						$querygetnumber="SELECT * FROM client WHERE client_id=$client_id";
 						$datanumber=mysqli_query($conn,$querygetnumber);
@@ -21,7 +21,7 @@ if (mysqli_query($conn,$sql)) {
 						$number=$numberdata['client_contact'];
 
 //send client message
-							textsms($number,$message);
+						textsms($number,$message);
  // get client number
 						$querygetnumberhotel="SELECT * FROM hotel WHERE hotel_id=$hotel_id";
 						$datanumberhotel=mysqli_query($conn,$querygetnumberhotel);
@@ -33,13 +33,13 @@ if (mysqli_query($conn,$sql)) {
 //send client message
 					
 						if(mail($hotel_email, "New Order", $messagehotel)){
-						echo "good";}
-						else{
-							echo "sorry";
-						}
-						session_start();
-						$_SESSION['flash_message']="Food ordered successfully";
-							  header('Location: ../index.php'); 
+							echo "good";}
+							else{
+								echo "sorry";
+							}
+							session_start();
+							$_SESSION['flash_message']="Food ordered successfully";
+						    header('Location: ../index.php'); 
 
 
 								

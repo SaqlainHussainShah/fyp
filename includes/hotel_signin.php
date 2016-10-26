@@ -23,30 +23,17 @@ if (isset($_POST['submit'])) {
 			 echo $_SESSION['flash_message']="email or password incorrect";
 				header('Location: form_hotel_signin.php');
 			}
-
 		}
-		else{
-			
+		else{	
 			session_start();
 			echo $_SESSION['flash_message']='record not found';
-				header('Location: form_hotel_signin.php');
+			header('Location: form_hotel_signin.php');
 		}
-
-
-
-
 	}
-	else{
-		
+	else{		
 		session_start();
 		echo	$_SESSION['flash_message']="Kindly fill both fields";
 		header('Location: form_hotel_signin.php');
-
 	}
-
 }
-
-
-
-
 ?>
