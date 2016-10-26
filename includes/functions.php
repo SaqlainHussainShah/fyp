@@ -1,7 +1,6 @@
 <?php
 function client_search_area(){
 	?>
-
 <!-- Main Div -->
 	<div id="background">
 		
@@ -15,21 +14,11 @@ function client_search_area(){
             <img src="images/image-slider-2.jpg"id="bg_img" alt="" />
 
             <img src="images/image-slider-3.jpg"id="bg_img" alt="" />
-           
-       
+            
        </div>
-
-
-
 <!-- end slider -->
-
-
 	</div>
-
 		<div id="page">
-
-    
-    
     <form id="searchForm" action="index.php#features" method="get" style="text-align:center;">
 
     	<h2>
@@ -40,7 +29,7 @@ function client_search_area(){
         
            	   <input type="text" class="form-control" id="s" name="searchfood" placeholder="Search food">
        
-            <input type="submit" value="Submit" id="submitButton" />
+            	<input type="submit" value="Submit" id="submitButton" />
         
                         
             <ul class="icons">

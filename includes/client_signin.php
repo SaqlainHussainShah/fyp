@@ -68,11 +68,7 @@ function client_signin(){
 	else{
 		echo "fill both fields ";
 	}
-
 }
-
-
-
 client_signin();
 
 ?>

@@ -16,8 +16,8 @@ if (isset($_SESSION['admin_signin']) && isset($_GET['hotel_id'])) {
 	}else{
 		echo "room not deleted";
 	}
-}
-}
+  }
+  }
 else{
 
 	echo "You cannot access this page";

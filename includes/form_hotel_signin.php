@@ -17,10 +17,7 @@ if (isset($_SESSION['client_signin']) || isset($_SESSION['hotel_signin']) ||isse
 		<style type="text/css">
 		*{
 			background-color:gray;
-
-
 		}
-
 		</style>
 	</head>
 	<body>
@@ -36,34 +33,24 @@ if (isset($_SESSION['client_signin']) || isset($_SESSION['hotel_signin']) ||isse
 						
 						?>
 					
-<h1> Hotel Login</h1>
-<em>Not registered ?
-<a href="form_hotel_signup.php" type="button" style="color:white;" >Get Registered</a></em>
-<form action="hotel_signin.php" method="post">
-															 
-															  <div class="form-group">
-															    <label for="email">Email</label>
-															    <input type="email" class="form-control" id="email" name="hotel_signin_email">
-															  </div>
-															  <div class="form-group">
-															    <label for="pwd">Password:</label>
-															  <input type="password" class="form-control" id="pwd" name="hotel_signin_password">
-															  </div>
-															   
-
-  
-
-
-
-										      				<button type="submit" type="button"name="submit" class="btn btn-primary" > Login </button>
-						      					&nbsp		<a  type="button" name="submit" class="btn btn-danger" href="../index.php" > cancel </a>
-
-										      				</form>
+						<h1> Hotel Login</h1>
+						<em>Not registered ?
+						<a href="form_hotel_signup.php" type="button" style="color:white;" >Get Registered</a></em>
+							<form action="hotel_signin.php" method="post">	 
+								<div class="form-group">
+								    <label for="email">Email</label>
+								    <input type="email" class="form-control" id="email" name="hotel_signin_email">
+								</div>
+								<div class="form-group">
+								    <label for="pwd">Password:</label>
+								    <input type="password" class="form-control" id="pwd" name="hotel_signin_password">
+								</div>
+								<button type="submit" type="button"name="submit" class="btn btn-primary" > Login </button>
+							    &nbsp <a  type="button" name="submit" class="btn btn-danger" href="../index.php" > cancel </a>
+		      				</form>
 						</div>
-				</div>
-				
+				</div>	
 			</div>	
 		</div>
-
 	</body>
 </html>

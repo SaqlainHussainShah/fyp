@@ -27,9 +27,7 @@ if(isset($_POST['submit']))
 				$_SESSION['flash_message']= "we have some problems try again later";
 				header('Location: ../index.php');
 			}
-
 		}
-
 		else{
 			session_start();
 		$_SESSION['flash_message']="All fields are required";

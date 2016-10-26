@@ -5,7 +5,7 @@ if (isset($_SESSION['flash_message'])) {
 	 unset($_SESSION['flash_message']);
 }
 else{
-	echo "note set";
+	echo "not set";
 }
 
  ?>

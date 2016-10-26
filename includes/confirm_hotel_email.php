@@ -10,11 +10,5 @@ function confirm_hotel_email($email,$code){
 	echo $email;
 mail($email, "Hello Confirm email", $message);
 echo "Registeration complete! please confirm your email";
-
-
 }
-
-
-
-
 ?>

@@ -15,10 +15,9 @@ if (isset($_SESSION['hotel_signin']) && isset($_POST['food_id'])) {
 		echo "sorry! try again later";
 	}
 
-}
-}
+  }
+  }
 else{
-
 	echo "You cannot access this page";
 }
 

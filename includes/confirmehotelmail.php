@@ -24,7 +24,4 @@ if (isset($_GET['code']) && isset($_GET['hotel_email'])) {
 		echo "database query failed";
 	}
 }
-
-
-
 ?>

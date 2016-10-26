@@ -10,10 +10,7 @@
 		<style type="text/css">
 		*{
 			background-color:gray;
-
-
 		}
-
 		</style>
 	</head>
 	<body>
@@ -32,10 +29,6 @@ if(!isset($_SESSION['hotel_id'])){
 }
 else{
 ?>
-
-
-
-
 <form method="post" action="create_food.php" enctype="multipart/form-data">
 															 <div class="form-group">
 															    <label for="name">Name:</label>

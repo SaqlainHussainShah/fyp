@@ -3,11 +3,8 @@ session_start();
 if (isset($_SESSION['client_signin']) || isset($_SESSION['hotel_signin']) ||isset($_SESSION['admin_signin'])) {
 	header('Location: ../index.php');
 }
-
-
 ?><?php
 include 'dbconnect.php';
-
 if (isset($_SESSION['admin_signin'])) {
 	header('Location: ../index.php');
 }
@@ -20,9 +17,7 @@ if (isset($_POST['admin_email']) && isset($_POST['admin_password'])) {
 		$admindata=mysqli_fetch_array($dbdata);
 		$dbemail=$admindata['admin_email'];
 		$dbpassword=$admindata['admin_password'];
-		if($admin_password==$dbpassword && $admin_email==$dbemail){
-			
-			
+		if($admin_password==$dbpassword && $admin_email==$dbemail){			
 			$_SESSION['admin_id']=$admindata['admin_id'];
 			$_SESSION['admin_email']=$dbemail;
 			$_SESSION['admin_password']=$dbpassword;
@@ -30,14 +25,12 @@ if (isset($_POST['admin_email']) && isset($_POST['admin_password'])) {
 			$_SESSION['admin_signin']=true;
 			$_SESSION['flash_message']="Logged in as Admin";
 			header('Location: ../index.php');
-
 		}
 		else{
 			session_start();
 			$_SESSION['flash_message']="email or password mismatch";
 			header('Location: admin_login.php');
 		}
-
 		}
 	
 	else{
@@ -45,7 +38,6 @@ if (isset($_POST['admin_email']) && isset($_POST['admin_password'])) {
 		$_SESSION['flash_message']="email not found. Try another email";
 		header('Location: admin_login.php');
 	}
-
 }else{
 
 ?>
@@ -61,15 +53,10 @@ if (isset($_POST['admin_email']) && isset($_POST['admin_password'])) {
 		<style type="text/css">
 		*{
 			background-color:gray;
-
-
 		}
-
 		</style>
 	</head>
 	<body>
-
-
 <div class="form-container">
 			<div class="no-results">
 				<div class="form-vertical-align ">
@@ -79,7 +66,6 @@ if (isset($_POST['admin_email']) && isset($_POST['admin_password'])) {
 					echo $_SESSION['flash_message'];
 					unset($_SESSION['flash_message']);
 				}
-
 				?>	
 						<h1> Admin Login </h1>
 						<form method="post">
@@ -87,7 +73,6 @@ if (isset($_POST['admin_email']) && isset($_POST['admin_password'])) {
 								<label for="email">Email:</label>
 								<input type="email" class="form-control" name="admin_email" id="email" required>				
 							</div>
-
 							<div class="form-group">
 								<label for="password">Password:</label>
 								<input type="password" class="form-control" name="admin_password" id="password" required>				
@@ -96,15 +81,10 @@ if (isset($_POST['admin_email']) && isset($_POST['admin_password'])) {
 								<button name="submit" class="btn btn-info"value="submit">Login</button>
 								&nbsp&nbsp
 								<a href="../index.php" type="button" class="btn btn-danger">Cancel</a>
-
 							</div>
-
-
-
 						</form>
 						</div>
-				</div>
-				
+				</div>			
 			</div>	
 		</div>
 </body>

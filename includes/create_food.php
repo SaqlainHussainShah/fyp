@@ -46,7 +46,6 @@ function create_food(){
 					die(" Select file");
 
 				}
-
 			}
 //------End image handling----
 $query="INSERT INTO food(food_name,food_location,food_serving,food_availability,food_price,food_image,hotel_id) 
@@ -62,7 +61,6 @@ $query="INSERT INTO food(food_name,food_location,food_serving,food_availability,
 	}
 
 }
-
 }
 create_food();
 

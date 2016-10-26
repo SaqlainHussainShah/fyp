@@ -7,8 +7,7 @@
 			   <link href="themes/1/js-image-slider.css" rel="stylesheet" type="text/css" />
     <script src="themes/1/js-image-slider.js" type="text/javascript"></script>
     <link href="generic.css" rel="stylesheet" type="text/css" /><link rel="stylesheet" type="text/css" href="styles.css" />
-  
 		</head>
-		<body>
+			<body>
 
 			

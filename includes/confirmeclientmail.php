@@ -14,7 +14,6 @@ if (isset($_GET['code']) && isset($_GET['client_email'])) {
 			}
 			else{
 				echo "sorry cannot confirm registration this time";
-
 			}
 		}
 		else{
@@ -24,7 +23,4 @@ if (isset($_GET['code']) && isset($_GET['client_email'])) {
 		echo "database query failed";
 	}
 }
-
-
-
 ?>

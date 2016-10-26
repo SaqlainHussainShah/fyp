@@ -11,7 +11,4 @@ echo "Registeration complete! please confirm your email";
  header('Location:../index.php');
 }
 
-
-
-
 ?>
